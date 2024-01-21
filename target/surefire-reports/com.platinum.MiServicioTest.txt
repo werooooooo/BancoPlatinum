@@ -1,0 +1,18 @@
+-------------------------------------------------------------------------------
+Test set: com.platinum.MiServicioTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec <<< FAILURE!
+com.platinum.MiServicioTest.testObtenerInformacionEjecutivoPorRut()  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at com.platinum.MiServicioTest.testObtenerInformacionEjecutivoPorRut(MiServicioTest.java:38)
+
+com.platinum.MiServicioTest.testConexionBaseDatos()  Time elapsed: 0 sec  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: not <null>
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:39)
+	at org.junit.jupiter.api.Assertions.fail(Assertions.java:134)
+	at org.junit.jupiter.api.AssertNotNull.failNull(AssertNotNull.java:47)
+	at org.junit.jupiter.api.AssertNotNull.assertNotNull(AssertNotNull.java:36)
+	at org.junit.jupiter.api.AssertNotNull.assertNotNull(AssertNotNull.java:31)
+	at org.junit.jupiter.api.Assertions.assertNotNull(Assertions.java:300)
+	at com.platinum.MiServicioTest.testConexionBaseDatos(MiServicioTest.java:23)
+
