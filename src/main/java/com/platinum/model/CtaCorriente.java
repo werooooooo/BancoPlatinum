@@ -10,10 +10,10 @@ import javax.persistence.ManyToOne;
 public class CtaCorriente {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long idCuenta; // IdCuenta(pk auto incremental)
+    private Long idCuenta; 
     
     @ManyToOne
-    private Persona rutCliente; // RutCliente(fk)
+    private Persona rutCliente; 
     
     private double monto;
     
@@ -50,8 +50,6 @@ public class CtaCorriente {
 
 	public void setEjecutivo(Ejecutivo ejecutivo) {
 		this.ejecutivo = ejecutivo;
-	}
-
-    // Getters y Setters
+	}  
     
 }

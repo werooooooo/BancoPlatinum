@@ -9,7 +9,7 @@ import javax.persistence.Id;
 public class Usuario {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id; // Id(pk auto incremental)
+    private Long id;
     private String nombreUsuario;
     private String password;
 	public Long getId() {
@@ -31,6 +31,5 @@ public class Usuario {
 		this.password = password;
 	}
 
-    // Getters y Setters
     
 }

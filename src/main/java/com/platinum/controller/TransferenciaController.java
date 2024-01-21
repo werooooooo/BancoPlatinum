@@ -19,11 +19,8 @@ public class TransferenciaController {
 
     @PostMapping("/realizar")
     public String realizarTransferencia(@RequestBody TransferenciaRequest request) {
-        // Aquí deberías manejar la lógica de realización de transferencia
-        Transaccion transaccion = request.getTransaccion();
+                Transaccion transaccion = request.getTransaccion();
         transferenciaService.realizarTransferencia(transaccion);
         return "Transferencia realizada exitosamente";
     }
-
-    // Puedes agregar más endpoints según sea necesario
-}
+    }

@@ -19,14 +19,14 @@ public class MiServicioTest {
 
     @Test
     public void testConexionBaseDatos() {
-        // Prueba de conexión a la base de datos
-        assertNotNull(miServicio); // Aseguramos que el servicio se ha inyectado correctamente
+       
+        assertNotNull(miServicio); 
     }
 
     @Test
     public void testObtenerInformacionEjecutivoPorRut() {
-        // Datos de prueba
-        String rutEjecutivo = "123456789"; // Reemplaza con un rut válido existente en tu base de datos
+        
+        String rutEjecutivo = "123456789";
         String nombreEsperado = "NombreEjecutivo";
         String apellidoEsperado = "ApellidoEjecutivo";
         String direccionEsperada = "DireccionEjecutivo";
@@ -34,10 +34,10 @@ public class MiServicioTest {
         String telefonoEsperado = "123456789";
         String nombreMascotaEsperado = "MascotaEjecutivo";
 
-        // Llamada al método del servicio
+        
         Ejecutivo ejecutivo = miServicio.obtenerInformacionEjecutivoPorRut(rutEjecutivo);
 
-        // Verificación de los resultados esperados
+        
         assertEquals(nombreEsperado, ejecutivo.getNombre());
         assertEquals(apellidoEsperado, ejecutivo.getApellido());
         assertEquals(direccionEsperada, ejecutivo.getDireccion());

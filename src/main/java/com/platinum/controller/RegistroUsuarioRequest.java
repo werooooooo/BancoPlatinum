@@ -14,33 +14,28 @@ public class RegistroUsuarioRequest {
     private Usuario usuario;
     private Ejecutivo ejecutivo;
     
-    // Agrega otros campos según tus necesidades
+    
     public Persona getPersona() {
-        // Lógica para crear un objeto Persona a partir de los campos proporcionados
+        
         Persona persona = new Persona();
         persona.setNombre(nombre);
         persona.setApellido(apellido);
         persona.setDireccion(direccion);
         persona.setCorreo(correo);
         persona.setTelefono(telefono);
-        persona.setNombreMascota(nombreMascota);
-
-        // Puedes ajustar la lógica según tus necesidades
+        persona.setNombreMascota(nombreMascota);     
 
         return persona;
     }
     
-    public Ejecutivo getEjecutivo() {
-        // Lógica para crear un objeto Ejecutivo a partir de los campos proporcionados
+    public Ejecutivo getEjecutivo() {     
         Ejecutivo ejecutivo = new Ejecutivo();
         ejecutivo.setNombre(nombre);
         ejecutivo.setApellido(apellido);
         ejecutivo.setDireccion(direccion);
         ejecutivo.setCorreo(correo);
         ejecutivo.setTelefono(telefono);
-        ejecutivo.setNombreMascota(nombreMascota);
-
-        // Puedes ajustar la lógica según tus necesidades
+        ejecutivo.setNombreMascota(nombreMascota);       
 
         return ejecutivo;
     }
@@ -87,7 +82,4 @@ public class RegistroUsuarioRequest {
 	public void setNombreMascota(String nombreMascota) {
 		this.nombreMascota = nombreMascota;
 	}
-
-    // Constructor, getters y setters
-    
 }

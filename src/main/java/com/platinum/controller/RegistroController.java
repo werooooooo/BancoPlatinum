@@ -19,7 +19,7 @@ public class RegistroController {
 
     @PostMapping("/usuario")
     public String registrarUsuario(@RequestBody RegistroUsuarioRequest request) {
-        // Aquí deberías manejar la lógica de registro de usuario
+        
         Usuario usuario = request.getUsuario();
         Persona persona = request.getPersona();
         Ejecutivo ejecutivo = request.getEjecutivo();
@@ -27,5 +27,4 @@ public class RegistroController {
         return "Usuario registrado exitosamente";
     }
 
-    // Puedes agregar más endpoints según sea necesario
-}
+ }

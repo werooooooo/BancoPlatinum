@@ -6,7 +6,7 @@ import javax.persistence.Id;
 @Entity
 public class Persona {
     @Id
-    private String rut; // Rut(pk)
+    private String rut;
     private String nombre;
     private String apellido;
     private String direccion;
@@ -54,8 +54,5 @@ public class Persona {
 	}
 	public void setNombreMascota(String nombreMascota) {
 		this.nombreMascota = nombreMascota;
-	}
-
-    // Getters y Setters
-    
+	}    
 }

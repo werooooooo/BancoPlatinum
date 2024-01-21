@@ -4,8 +4,6 @@ public class AutenticacionRequest {
     private String nombreUsuario;
     private String password;
 
-    // Agrega getters y setters
-
     public String getNombreUsuario() {
         return nombreUsuario;
     }

@@ -16,8 +16,7 @@ public class Ejecutivo {
     private String correo;
     private String telefono;
     private String nombreMascota;
-
-    // Constructor JPA
+ 
     public Ejecutivo() {}
 
     public Ejecutivo(String rut, String nombre, String departamento) {
@@ -25,8 +24,6 @@ public class Ejecutivo {
         this.nombre = nombre;
         this.departamento = departamento;
     }
-
-    // Getters y setters
     public String getRut() {
         return rut;
     }

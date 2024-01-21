@@ -10,16 +10,16 @@ import javax.persistence.ManyToOne;
 public class Transaccion {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id; // Id(pk auto incremental)
+    private Long id; 
     
     @ManyToOne
-    private Persona rutCliente; // RutCliente(fk)
+    private Persona rutCliente; 
     
     @ManyToOne
-    private Persona rutDueno; // RutDueño(fk)
+    private Persona rutDueno; 
     
     @ManyToOne
-    private CtaCorriente idCuenta; // IdCuenta(fk)
+    private CtaCorriente idCuenta; 
     
     private double montoTransferencia;
     private String cuentaTransferencia;
@@ -66,7 +66,5 @@ public class Transaccion {
 	public void setTipoCuenta(String tipoCuenta) {
 		this.tipoCuenta = tipoCuenta;
 	}
-
-    // Getters y Setters
     
 }

@@ -10,10 +10,4 @@ public class Registro {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
-    // Agrega aquí los atributos que correspondan a tu entidad
-
-    // Constructor, getters y setters
-
-    // Puedes agregar otros métodos y anotaciones según sea necesario
-}
+}  
